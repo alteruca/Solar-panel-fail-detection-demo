@@ -34,20 +34,23 @@ The demo presented tries to immitate a solar panel using a keyboard and its keys
 * 1 - Connect the flir camera to the raspberry pi with the USB-Type C adapter
 * 2 - Use VNC to connect to the raspberry and show what is catching with the Flir camera or just swtich on the raspi
 * 3 - Run the following scripts in order: Flircamera.py > tkinter.py > menu.py
-* 4 - Now, every single time that we press the key "E" will take a screenshot and the models will try to detect and classify the warm key in the keyboard.
+ What we have now is 2 different windows displaying what the thermal camera is catching as we can see below.
+ 
+![alt text](Flir/Img_Cropped.png)
 
+* 4 - Now, every single time that we press the key "E" will take a screenshot and the models will try to detect and classify the warm key in the keyboard as we can see in the examples down below.
 
-
-**NOTE: In the raspberry that I used I configured a command in the terminal so all the scripts could run in the correct order and on one time, in yours the order will have to be as follows: **
 
 ## Examples of usage
+This is the data flow in which the program will work, first of all, take the screenshot of what we want to analise pressing E and sending the screenshot to the first model, what we receive is a json with coordenates that we will use to draw yellow windows in the objects detected.
+![alt text](Flir/ejemplo acierto/global_sT.png)
 
-![alt text]()
-![alt text]()
-![alt text]()
+As mentioned before, we mark the detected objects and from each one, we crop the image and send the cropped image to the next classifitacion model.
+![alt text](Flir/ejemplo acierto/Img_General_ColorT.png)
 
-
-
+![alt text](Flir/ejemplo acierto/deteccionT.png)
+![alt text](Flir/ejemplo acierto/recortada_color_2T.png)
+![alt text](Flir/squares.png)
 
 
 ## Author
