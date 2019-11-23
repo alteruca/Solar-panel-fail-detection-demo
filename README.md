@@ -45,17 +45,22 @@ The demo presented tries to immitate a solar panel using a keyboard and its keys
 This is the data flow in which the program will work, first of all, take the screenshot of what we want to analise pressing E and sending the screenshot to the first model, what we receive is a json with coordenates that we will use to draw yellow windows in the objects detected.
 ![alt text](global_sT.png)
 
+
 As mentioned before, we mark the detected objects and from each one, we crop the image and send the cropped image to the next classifitacion model.
 
+
+![alt text](Flir/squares.png)
+
+![alt text](Img_General_ColorT.png)
 
 ![alt text](deteccionT.png)
 
 ![alt text](recortada_color_2T.png)
 
-![alt text](Flir/squares.png)
+
 
 In the end, what we have is this result in which we can see the normal image with the potential failure pasted on it so we can see it easily.
-![alt text](Img_General_ColorT.png)
+
 
 ## Author
 
